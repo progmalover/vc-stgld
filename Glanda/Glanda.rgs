@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'Glanda'
+		'Glanda.exe'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

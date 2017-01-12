@@ -1,0 +1,24 @@
+HKCR
+{
+	Glanda.GLD_Application.1 = s 'GLD_Application Class'
+	{
+		CLSID = s '{77A5CE55-910C-400D-B632-5F2BC6FC1F1D}'
+	}
+	Glanda.GLD_Application = s 'GLD_Application Class'
+	{
+		CLSID = s '{77A5CE55-910C-400D-B632-5F2BC6FC1F1D}'
+		CurVer = s 'Glanda.GLD_Application.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {77A5CE55-910C-400D-B632-5F2BC6FC1F1D} = s 'GLD_Application Class'
+		{
+			ProgID = s 'Glanda.GLD_Application.1'
+			VersionIndependentProgID = s 'Glanda.GLD_Application'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{1F864945-2901-4006-9251-861A2BBABBB6}'
+		}
+	}
+}

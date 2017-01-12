@@ -1,0 +1,1160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_USB|Win32">
+      <Configuration>Debug_USB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_USB|Win32">
+      <Configuration>Release_USB</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19B18EDA-472E-4AE9-9021-7B7DAF6E54D7}</ProjectGuid>
+    <RootNamespace>GMovie</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(VCInstallDir)VC\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHa %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\Commonlib\include\Regexx;..\..\Commonlib\include\Win32Common;..\..\Commonlib\include\common;..\..\Commonlib\include\Geometry;..\..\Commonlib\include\zlib;..\..\Commonlib\include\jpeg;..\..\SWFLib\include\SWFSDK;..\..\SWFLib\include\DSWFLib;..\..\SWFLib\include\CSWFLib;..\SWFGraphicLib\src\Graphics;..\SWFGraphicLib\src\image;..\SWFGraphicLib\src\tools;..\ShapeEditLib\Tool;..\ShapeEditLib\Auxiliary;..\ShapeEditLib\Graph;..\ShapeEditLib\command;..\Convert;..\Armadillo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Regexx.lib;Geometry.lib;zlib.lib;Jpeg.lib;png.lib;LibSndFile.lib;Lame.lib;SWFSDK.lib;cswflib.lib;dswflib.lib;SWFGraphicLib.lib;ShapeEditLib.lib;AISDK.lib;AIToSWF.lib;EMFToSWF.lib;SVGSDK.lib;SVGToSWF.lib;WMFToSWF.lib;Armadillo.lib;Armadillo.res;Updater.lib;Updater.res;Imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\CommonLib\lib\Debug\;..\..\SWFLib\lib\Debug\;..\SWFGraphicLib\Debug\;..\ShapeEditLib\Debug\;..\Convert\Bin\Debug\;..\Armadillo\Debug\;..\Updater\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)GMovie.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>libcd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying target file...</Message>
+      <Command>MD "C:\test\Glanda\$(Configuration)"
+
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHa %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\CommonLib\include\Regexx;..\..\CommonLib\include\Win32Common;..\..\CommonLib\include\common;..\..\CommonLib\include\Geometry;..\..\CommonLib\include\zlib;..\..\CommonLib\include\jpeg;..\..\SWFLib\include\SWFSDK;..\..\SWFLib\include\DSWFLib;..\..\SWFLib\include\CSWFLib;..\SWFGraphicLib\src\Graphics;..\SWFGraphicLib\src\image;..\SWFGraphicLib\src\tools;..\ShapeEditLib\Tool;..\ShapeEditLib\Auxiliary;..\ShapeEditLib\Graph;..\ShapeEditLib\command;..\Convert;..\Armadillo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Regexx.lib;common.lib;Win32Common.lib;Geometry.lib;zlib.lib;Jpeg.lib;png.lib;LibSndFile.lib;Lame.lib;SWFSDK.lib;DSWFLib.lib;CSWFLib.lib;SWFGraphicLib.lib;ShapeEditLib.lib;AISDK.lib;AIToSWF.lib;EMFToSWF.lib;SVGSDK.lib;SVGToSWF.lib;WMFToSWF.lib;Armadillo.lib;Armadillo.res;Updater.lib;Updater.res;Imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Glanda.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\CommonLib\lib\Release\;..\..\SWFLib\lib\Release\;..\SWFGraphicLib\Release\;..\ShapeEditLib\Release\;..\Convert\Bin\Release\;..\Armadillo\Release\;..\Updater\Release\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <DelayLoadDLLs>oleacc.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)GMovie.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Glanda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Glanda_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying target file...</Message>
+      <Command>MD "C:\test\Glanda\$(Configuration)"
+COPY "$(TargetPath)" "C:\test\Glanda\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHa %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\..\CommonLib\include\Regexx;..\..\CommonLib\include\Win32Common;..\..\CommonLib\include\common;..\..\CommonLib\include\Geometry;..\..\CommonLib\include\zlib;..\..\CommonLib\include\jpeg;..\..\SWFLib\include\SWFSDK;..\..\SWFLib\include\DSWFLib;..\..\SWFLib\include\CSWFLib;..\SWFGraphicLib\src\Graphics;..\SWFGraphicLib\src\image;..\SWFGraphicLib\src\tools;..\ShapeEditLib\Tool;..\ShapeEditLib\Auxiliary;..\ShapeEditLib\Graph;..\ShapeEditLib\command;..\Convert;..\Armadillo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USB_VERSION_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Regexx.lib;common.lib;Win32Common.lib;Geometry.lib;zlib.lib;Jpeg.lib;png.lib;LibSndFile.lib;Lame.lib;SWFSDK.lib;DSWFLib.lib;CSWFLib.lib;SWFGraphicLib.lib;ShapeEditLib.lib;AISDK.lib;AIToSWF.lib;EMFToSWF.lib;SVGSDK.lib;SVGToSWF.lib;WMFToSWF.lib;Armadillo.lib;Armadillo.res;Updater.lib;Updater.res;Imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Glanda.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\CommonLib\lib\Release\;..\..\SWFLib\lib\Release\;..\SWFGraphicLib\Release\;..\ShapeEditLib\Release\;..\Convert\Bin\Release\;..\Armadillo\Release\;..\Updater\Release\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <DelayLoadDLLs>oleacc.dll;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)GMovie.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>Glanda_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>Glanda_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying target file...</Message>
+      <Command>MD "C:\test\Glanda\$(Configuration)"
+COPY "$(TargetPath)" "C:\test\Glanda\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/EHa %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\CommonLib\include\Regexx;..\..\CommonLib\include\Win32Common;..\..\CommonLib\include\common;..\..\CommonLib\include\Geometry;..\..\CommonLib\include\zlib;..\..\CommonLib\include\jpeg;..\..\SWFLib\include\SWFSDK;..\..\SWFLib\include\DSWFLib;..\..\SWFLib\include\CSWFLib;..\SWFGraphicLib\src\Graphics;..\SWFGraphicLib\src\image;..\SWFGraphicLib\src\tools;..\ShapeEditLib\Tool;..\ShapeEditLib\Auxiliary;..\ShapeEditLib\Graph;..\ShapeEditLib\command;..\Convert;..\Armadillo;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USB_VERSION_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>Regexx.lib;common.lib;Win32Common.lib;Geometry.lib;zlib.lib;Jpeg.lib;png.lib;LibSndFile.lib;Lame.lib;SWFSDK.lib;DSWFLib.lib;CSWFLib.lib;SWFGraphicLib.lib;ShapeEditLib.lib;AISDK.lib;AIToSWF.lib;EMFToSWF.lib;SVGSDK.lib;SVGToSWF.lib;WMFToSWF.lib;Armadillo.lib;Armadillo.res;Updater.lib;Updater.res;Imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)Glanda.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\CommonLib\lib\Debug\;..\..\SWFLib\lib\Debug\;..\SWFGraphicLib\Debug\;..\ShapeEditLib\Debug\;..\Convert\Bin\Debug\;..\Armadillo\Debug\;..\Updater\Debug\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)GMovie.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)$(ProjectName).tlb</TypeLibraryName>
+      <HeaderFileName>$(ProjectName)_i.h</HeaderFileName>
+      <InterfaceIdentifierFileName>$(ProjectName)_i.c</InterfaceIdentifierFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying target file...</Message>
+      <Command>MD "C:\test\Glanda\$(Configuration)"
+COPY "$(TargetPath)" "C:\test\Glanda\$(Configuration)"
+</Command>
+    </PostBuildEvent>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ASDoc.cpp" />
+    <ClCompile Include="ASDocBase .cpp" />
+    <ClCompile Include="ASView.cpp" />
+    <ClCompile Include="ASViewBase.cpp" />
+    <ClCompile Include="ASViewTabCtrl.cpp" />
+    <ClCompile Include="AutoCompletionComboBox.cpp" />
+    <ClCompile Include="AutoCompletionComboBoxEdit.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="BalloonToolTip.cpp" />
+    <ClCompile Include="Browsers.cpp" />
+    <ClCompile Include="C2I.cpp" />
+    <ClCompile Include="CategoryBar.cpp" />
+    <ClCompile Include="CategoryExplorerPage.cpp" />
+    <ClCompile Include="CategoryImportPage.cpp" />
+    <ClCompile Include="CategoryPage.cpp" />
+    <ClCompile Include="CategoryResourcePage.cpp" />
+    <ClCompile Include="CategoryTabCtrl.cpp" />
+    <ClCompile Include="CategoryToolsPage.cpp" />
+    <ClCompile Include="CategoryWnd.cpp" />
+    <ClCompile Include="CCrystalEditView.cpp" />
+    <ClCompile Include="CCrystalTextBuffer.cpp" />
+    <ClCompile Include="CCrystalTextView.cpp" />
+    <ClCompile Include="CCrystalTextView2.cpp" />
+    <ClCompile Include="CEditReplaceDlg.cpp" />
+    <ClCompile Include="CFindTextDlg.cpp" />
+    <ClCompile Include="ChangeZorder.cpp" />
+    <ClCompile Include="CheckBoxTreeCtrl.cpp" />
+    <ClCompile Include="CheckMessageBox.cpp" />
+    <ClCompile Include="Clipboard.cpp" />
+    <ClCompile Include="CmdAddShape.cpp" />
+    <ClCompile Include="CmdAddSound.cpp" />
+    <ClCompile Include="CmdBreakApart.cpp" />
+    <ClCompile Include="CmdBringToFront.cpp" />
+    <ClCompile Include="CmdChangeButtonCap.cpp" />
+    <ClCompile Include="CmdChangeCurrentScene.cpp" />
+    <ClCompile Include="CmdChangeFillStyle.cpp" />
+    <ClCompile Include="CmdChangeLineStyle.cpp" />
+    <ClCompile Include="CmdChangeSymbolName.cpp" />
+    <ClCompile Include="CmdChangeText.cpp" />
+    <ClCompile Include="CmdChangeTransformOrigin.cpp" />
+    <ClCompile Include="CmdDeleteScene.cpp" />
+    <ClCompile Include="CmdGroup.cpp" />
+    <ClCompile Include="CmdInsertAnchorPoint.cpp" />
+    <ClCompile Include="CmdInsertEffect.cpp" />
+    <ClCompile Include="CmdInsertScene.cpp" />
+    <ClCompile Include="CmdModifyCxform.cpp" />
+    <ClCompile Include="CmdModifyEffectTime.cpp" />
+    <ClCompile Include="CmdModifyFillStyle.cpp" />
+    <ClCompile Include="CmdModifyLineStyle.cpp" />
+    <ClCompile Include="CmdModifyMatrix.cpp" />
+    <ClCompile Include="CmdModifyMovieSound.cpp" />
+    <ClCompile Include="CmdModifySceneSoundTime.cpp" />
+    <ClCompile Include="CmdMoveAnchorPoint.cpp" />
+    <ClCompile Include="CmdMoveControlPoint.cpp" />
+    <ClCompile Include="CmdMoveEffect.cpp" />
+    <ClCompile Include="CmdReline.cpp" />
+    <ClCompile Include="CmdRemoveAnchorPoint.cpp" />
+    <ClCompile Include="CmdRemoveEffect.cpp" />
+    <ClCompile Include="CmdRemoveInstance.cpp" />
+    <ClCompile Include="CmdRemoveSound.cpp" />
+    <ClCompile Include="CmdRenameScene.cpp" />
+    <ClCompile Include="CmdReplaceButtonObj.cpp" />
+    <ClCompile Include="CmdReplaceSound.cpp" />
+    <ClCompile Include="CmdSendToBack.cpp" />
+    <ClCompile Include="CmdTransformFillStyle.cpp" />
+    <ClCompile Include="CmdUpdateObj.cpp" />
+    <ClCompile Include="CodeTip.cpp" />
+    <ClCompile Include="CoException.cpp" />
+    <ClCompile Include="ColorPicker.cpp" />
+    <ClCompile Include="ColorPickerH.cpp" />
+    <ClCompile Include="ColorPickerSV.cpp" />
+    <ClCompile Include="ColorSwatch.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandDrawOnce.cpp" />
+    <ClCompile Include="ComUtils.cpp" />
+    <ClCompile Include="Crc32Static.cpp" />
+    <ClCompile Include="CurvedPath.cpp" />
+    <ClCompile Include="CustomDrawListCtrl.cpp" />
+    <ClCompile Include="CuteTabCtrl.cpp" />
+    <ClCompile Include="DeferWindowPos.cpp" />
+    <ClCompile Include="DesignWnd.cpp" />
+    <ClCompile Include="Dib.cpp" />
+    <ClCompile Include="DlgAbout.cpp" />
+    <ClCompile Include="DlgAboutLame.cpp" />
+    <ClCompile Include="DlgAddBrowser.cpp" />
+    <ClCompile Include="DlgApplyTemplate.cpp" />
+    <ClCompile Include="DlgChangeButtonText.cpp" />
+    <ClCompile Include="DlgColorAdvanced.cpp" />
+    <ClCompile Include="DlgColorSwatch.cpp" />
+    <ClCompile Include="DlgComment.cpp" />
+    <ClCompile Include="DlgDirectoryPicker.cpp" />
+    <ClCompile Include="DlgEffectPanel.cpp" />
+    <ClCompile Include="DlgExport.cpp" />
+    <ClCompile Include="DlgFontPreview.cpp" />
+    <ClCompile Include="DlgImportingSWF.cpp" />
+    <ClCompile Include="DlgInsertText.cpp" />
+    <ClCompile Include="DlgInstanceAction.cpp" />
+    <ClCompile Include="DlgNewFolder.cpp" />
+    <ClCompile Include="DlgPreview.cpp" />
+    <ClCompile Include="DlgProgress.cpp" />
+    <ClCompile Include="DlgSceneAction.cpp" />
+    <ClCompile Include="DlgSelectBackgrndPos.cpp" />
+    <ClCompile Include="DlgSelectEffect.cpp" />
+    <ClCompile Include="DlgSelectScene.cpp" />
+    <ClCompile Include="DlgSelectTarget.cpp" />
+    <ClCompile Include="DlgSelectTextChanging.cpp" />
+    <ClCompile Include="DlgTemplates.cpp" />
+    <ClCompile Include="DlgTextTool.cpp" />
+    <ClCompile Include="DlgToolOption.cpp" />
+    <ClCompile Include="DlgToolOptionPolygonTool.cpp" />
+    <ClCompile Include="DlgToolOptionRoundRectTool.cpp" />
+    <ClCompile Include="DlgToolOptionStarTool.cpp" />
+    <ClCompile Include="DlgToolOptionTextTool.cpp" />
+    <ClCompile Include="DlgUndoRedo.cpp" />
+    <ClCompile Include="DlgWebBrowser.cpp" />
+    <ClCompile Include="DockBarEx.cpp" />
+    <ClCompile Include="DockContextEx.cpp" />
+    <ClCompile Include="DrawHelper.cpp" />
+    <ClCompile Include="EditCxformPage.cpp" />
+    <ClCompile Include="EditEx.cpp" />
+    <ClCompile Include="EditGeneralPage.cpp" />
+    <ClCompile Include="EditMatrixPage.cpp" />
+    <ClCompile Include="EditMCEditTextDialog.cpp" />
+    <ClCompile Include="EditMCReplaceDialog.cpp" />
+    <ClCompile Include="EditMCShapePage.cpp" />
+    <ClCompile Include="EditMCShapeSheet.cpp" />
+    <ClCompile Include="EditMCSheet.cpp" />
+    <ClCompile Include="EditMCSoundPage.cpp" />
+    <ClCompile Include="EditMCTextPage.cpp" />
+    <ClCompile Include="EditShapeFillPage.cpp" />
+    <ClCompile Include="EditShapeLinePage.cpp" />
+    <ClCompile Include="EditShapeSheet.cpp" />
+    <ClCompile Include="EditTextSheet.cpp" />
+    <ClCompile Include="EffectBar.cpp" />
+    <ClCompile Include="EffectCommonParameters.cpp" />
+    <ClCompile Include="EffectInplaceEditor.cpp" />
+    <ClCompile Include="EffectWnd.cpp" />
+    <ClCompile Include="EventsListBox.cpp" />
+    <ClCompile Include="FileDialogEx.cpp" />
+    <ClCompile Include="FileName.cpp" />
+    <ClCompile Include="filepath.cpp" />
+    <ClCompile Include="FlashPlayer.cpp" />
+    <ClCompile Include="FlatBitmapButton.cpp" />
+    <ClCompile Include="FlatButton.cpp" />
+    <ClCompile Include="FlatColorButton.cpp" />
+    <ClCompile Include="FlatShapeButton.cpp" />
+    <ClCompile Include="FlexListCtrl.cpp" />
+    <ClCompile Include="FolderDialog.cpp" />
+    <ClCompile Include="FontComboBox.cpp" />
+    <ClCompile Include="FontPreviewCombo.cpp" />
+    <ClCompile Include="Glanda.cpp" />
+    <ClCompile Include="GlandaClipboard.cpp" />
+    <ClCompile Include="GlandaCommand.cpp" />
+    <ClCompile Include="GlandaDoc.cpp" />
+    <ClCompile Include="GlandaSizingControlBar.cpp" />
+    <ClCompile Include="GlandaVersion.cpp" />
+    <ClCompile Include="GlandaView.cpp" />
+    <ClCompile Include="GLD_Application.cpp" />
+    <ClCompile Include="GLD_PropertyPage.cpp" />
+    <ClCompile Include="GLD_PropertySheet.cpp" />
+    <ClCompile Include="gldEffect.cpp" />
+    <ClCompile Include="gldEffectManager.cpp" />
+    <ClCompile Include="gldInstance.cpp" />
+    <ClCompile Include="gldMainMovie2.cpp" />
+    <ClCompile Include="gldMovieSound.cpp" />
+    <ClCompile Include="gldScene2.cpp" />
+    <ClCompile Include="gldSceneSound.cpp" />
+    <ClCompile Include="Global.cpp" />
+    <ClCompile Include="GPAIR.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="GroupUpdate.cpp" />
+    <ClCompile Include="Help.cpp" />
+    <ClCompile Include="HexColorEdit.cpp" />
+    <ClCompile Include="HierarchyDropdown.cpp" />
+    <ClCompile Include="HierarchyPopup.cpp" />
+    <ClCompile Include="HistoryComboBox.cpp" />
+    <ClCompile Include="HSplitter.cpp" />
+    <ClCompile Include="I2C.cpp" />
+    <ClCompile Include="ImageListCtrl.cpp" />
+    <ClCompile Include="ImportImageDialog.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="InputBox.cpp" />
+    <ClCompile Include="InstanceActionPage.cpp" />
+    <ClCompile Include="InstanceActionSheet.cpp" />
+    <ClCompile Include="ITextTool.cpp" />
+    <ClCompile Include="LineWidthEdit.cpp" />
+    <ClCompile Include="ListTemplate.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MainToolBar.cpp" />
+    <ClCompile Include="MemberListBox.cpp" />
+    <ClCompile Include="MiniDockFrameWndEx.cpp" />
+    <ClCompile Include="MoviePreview.cpp" />
+    <ClCompile Include="MoviePropertiesPage.cpp" />
+    <ClCompile Include="MoviePropertiesSheet.cpp" />
+    <ClCompile Include="MovieSoundPage.cpp" />
+    <ClCompile Include="MruMgr.cpp" />
+    <ClCompile Include="MulSelTreeCtrl.cpp" />
+    <ClCompile Include="my_app.cpp" />
+    <ClCompile Include="NewMenu.cpp" />
+    <ClCompile Include="NumberEdit.cpp" />
+    <ClCompile Include="ObjectMap.cpp" />
+    <ClCompile Include="Options.cpp" />
+    <ClCompile Include="OptionsPageAS.cpp" />
+    <ClCompile Include="OptionsPageDesign.cpp" />
+    <ClCompile Include="OptionsPageGeneral.cpp" />
+    <ClCompile Include="OptionsPagePreview.cpp" />
+    <ClCompile Include="OptionsPageTimeLine.cpp" />
+    <ClCompile Include="OptionsSheet.cpp" />
+    <ClCompile Include="OutputBar.cpp" />
+    <ClCompile Include="OutputDoc.cpp" />
+    <ClCompile Include="OutputView.cpp" />
+    <ClCompile Include="OwnerDrawComboBox.cpp" />
+    <ClCompile Include="OwnerDrawListBox.cpp" />
+    <ClCompile Include="PageCommon.cpp" />
+    <ClCompile Include="PageEffectPreviewOptions.cpp" />
+    <ClCompile Include="PagePublishExport.cpp" />
+    <ClCompile Include="PagePublishFinished.cpp" />
+    <ClCompile Include="PagePublishHTMLOptions.cpp" />
+    <ClCompile Include="PagePublishInsertCode.cpp" />
+    <ClCompile Include="PagePublishSelect.cpp" />
+    <ClCompile Include="PagePublishSelectHTML.cpp" />
+    <ClCompile Include="PagePublishViewCode.cpp" />
+    <ClCompile Include="PaneBar.cpp" />
+    <ClCompile Include="PlaySoundDialog.cpp" />
+    <ClCompile Include="PopupSliderCtrl.cpp" />
+    <ClCompile Include="ProgressStatusBar.cpp" />
+    <ClCompile Include="PropertyPageFixed.cpp" />
+    <ClCompile Include="PropGrid.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="ResizableDialog.cpp" />
+    <ClCompile Include="ResizableGrip.cpp" />
+    <ClCompile Include="ResizableLayout.cpp" />
+    <ClCompile Include="ResizableMinMax.cpp" />
+    <ClCompile Include="ResizablePage.cpp" />
+    <ClCompile Include="ResizableSheet.cpp" />
+    <ClCompile Include="ResizableState.cpp" />
+    <ClCompile Include="ResizableToolTipDialog.cpp" />
+    <ClCompile Include="ResourceDirTreeCtrl.cpp" />
+    <ClCompile Include="ResourceExplorerTree.cpp" />
+    <ClCompile Include="ResourceExplorerWnd.cpp" />
+    <ClCompile Include="ResourceThumbFilePropertiesDialog.cpp" />
+    <ClCompile Include="ResourceThumbItem.cpp" />
+    <ClCompile Include="ResourceThumbListCtrl.cpp" />
+    <ClCompile Include="ResourceThumbObjPropertiesDialog.cpp" />
+    <ClCompile Include="ResourceThumbRenameDialog.cpp" />
+    <ClCompile Include="RuleWnd.cpp" />
+    <ClCompile Include="SceneActionPage.cpp" />
+    <ClCompile Include="SceneListBar.cpp" />
+    <ClCompile Include="SceneListCtrl.cpp" />
+    <ClCompile Include="SceneNameEdit.cpp" />
+    <ClCompile Include="ScenePropertiesPage.cpp" />
+    <ClCompile Include="ScenePropertiesSheet.cpp" />
+    <ClCompile Include="ScrollButton.cpp" />
+    <ClCompile Include="Selection.cpp" />
+    <ClCompile Include="ShapeDraw.cpp" />
+    <ClCompile Include="SheetPublish.cpp" />
+    <ClCompile Include="ShellPidl.cpp" />
+    <ClCompile Include="ShellTree.cpp" />
+    <ClCompile Include="shockwaveflash.cpp" />
+    <ClCompile Include="sizecbar.cpp" />
+    <ClCompile Include="SizingControlBarEx.cpp" />
+    <ClCompile Include="SlidingPanel.cpp" />
+    <ClCompile Include="SlidingPanelGroup.cpp" />
+    <ClCompile Include="SmartComboBox.cpp" />
+    <ClCompile Include="SmartEdit.cpp" />
+    <ClCompile Include="SoundPlayerWrapper.cpp" />
+    <ClCompile Include="Splash.cpp" />
+    <ClCompile Include="Splitter.cpp" />
+    <ClCompile Include="StaticBitmap.cpp" />
+    <ClCompile Include="StaticColor.cpp" />
+    <ClCompile Include="StaticColorAlpha.cpp" />
+    <ClCompile Include="StaticFillStyle.cpp" />
+    <ClCompile Include="StaticLinearGradientFill.cpp" />
+    <ClCompile Include="StaticLink.cpp" />
+    <ClCompile Include="StaticPasvButton.cpp" />
+    <ClCompile Include="StaticShapePreview.cpp" />
+    <ClCompile Include="StaticSpinButton.cpp" />
+    <ClCompile Include="StaticSplitter.cpp" />
+    <ClCompile Include="StaticText.cpp" />
+    <ClCompile Include="StaticTip.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug_USB|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_USB|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SWFImportCache.cpp" />
+    <ClCompile Include="SWFProxy.cpp" />
+    <ClCompile Include="SWFStream.cpp" />
+    <ClCompile Include="SysParas.cpp" />
+    <ClCompile Include="TargetTree.cpp" />
+    <ClCompile Include="TemplateCategory.cpp" />
+    <ClCompile Include="TemplateListCtrl.cpp" />
+    <ClCompile Include="TestImportDlg.cpp" />
+    <ClCompile Include="TextEffect.cpp" />
+    <ClCompile Include="TextStyleListCtrl.cpp" />
+    <ClCompile Include="TextStyleManager.cpp" />
+    <ClCompile Include="TextToolEx.cpp" />
+    <ClCompile Include="Tips.cpp" />
+    <ClCompile Include="TipWnd.cpp" />
+    <ClCompile Include="ToolBarButton.cpp" />
+    <ClCompile Include="ToolbarEx.cpp" />
+    <ClCompile Include="ToolButton.cpp" />
+    <ClCompile Include="ToolButtonPopup.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="TransAdaptor.cpp" />
+    <ClCompile Include="TrayWnd.cpp" />
+    <ClCompile Include="TShapeParser.cpp" />
+    <ClCompile Include="Typeset.cpp" />
+    <ClCompile Include="UndoListBox.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="VersionInfo.cpp" />
+    <ClCompile Include="VisualStylesXP.cpp" />
+    <ClCompile Include="VSplitter.cpp" />
+    <ClCompile Include="ZoomComboBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="Glanda.idl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="acompiler.h" />
+    <ClInclude Include="armadillo.h" />
+    <ClInclude Include="ASDoc.h" />
+    <ClInclude Include="ASDocBase.h" />
+    <ClInclude Include="ASView.h" />
+    <ClInclude Include="ASViewBase.h" />
+    <ClInclude Include="ASViewTabCtrl.h" />
+    <ClInclude Include="AutoCompletionComboBox.h" />
+    <ClInclude Include="AutoCompletionComboBoxEdit.h" />
+    <ClInclude Include="AutoUpgradeLauncher.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="BalloonToolTip.h" />
+    <ClInclude Include="Browsers.h" />
+    <ClInclude Include="C2I.h" />
+    <ClInclude Include="CategoryBar.h" />
+    <ClInclude Include="CategoryExplorerPage.h" />
+    <ClInclude Include="CategoryImportPage.h" />
+    <ClInclude Include="CategoryPage.h" />
+    <ClInclude Include="CategoryResourcePage.h" />
+    <ClInclude Include="CategoryTabCtrl.h" />
+    <ClInclude Include="CategoryToolsPage.h" />
+    <ClInclude Include="CategoryWnd.h" />
+    <ClInclude Include="CBTreeRc.h" />
+    <ClInclude Include="CCrystalEditView.h" />
+    <ClInclude Include="CCrystalTextBuffer.h" />
+    <ClInclude Include="CCrystalTextView.h" />
+    <ClInclude Include="CEditReplaceDlg.h" />
+    <ClInclude Include="CFindTextDlg.h" />
+    <ClInclude Include="ChangeZorder.h" />
+    <ClInclude Include="CheckBoxTreeCtrl.h" />
+    <ClInclude Include="CheckMessageBox.h" />
+    <ClInclude Include="Clipboard.h" />
+    <ClInclude Include="CmdAddShape.h" />
+    <ClInclude Include="CmdAddSound.h" />
+    <ClInclude Include="CmdBreakApart.h" />
+    <ClInclude Include="CmdBringToFront.h" />
+    <ClInclude Include="CmdChangeButtonCap.h" />
+    <ClInclude Include="CmdChangeCurrentScene.h" />
+    <ClInclude Include="CmdChangeFillStyle.h" />
+    <ClInclude Include="CmdChangeLineStyle.h" />
+    <ClInclude Include="CmdChangeSymbolName.h" />
+    <ClInclude Include="CmdChangeText.h" />
+    <ClInclude Include="CmdChangeTransformOrigin.h" />
+    <ClInclude Include="CmdDeleteScene.h" />
+    <ClInclude Include="CmdGroup.h" />
+    <ClInclude Include="CmdInsertAnchorPoint.h" />
+    <ClInclude Include="CmdInsertEffect.h" />
+    <ClInclude Include="CmdInsertScene.h" />
+    <ClInclude Include="CmdModifyCxform.h" />
+    <ClInclude Include="CmdModifyEffectTime.h" />
+    <ClInclude Include="CmdModifyFillStyle.h" />
+    <ClInclude Include="CmdModifyLineStyle.h" />
+    <ClInclude Include="CmdModifyMatrix.h" />
+    <ClInclude Include="CmdModifyMovieSound.h" />
+    <ClInclude Include="CmdModifySceneSoundTime.h" />
+    <ClInclude Include="CmdMoveAnchorPoint.h" />
+    <ClInclude Include="CmdMoveControlPoint.h" />
+    <ClInclude Include="CmdMoveEffect.h" />
+    <ClInclude Include="CmdReline.h" />
+    <ClInclude Include="CmdRemoveAnchorPoint.h" />
+    <ClInclude Include="CmdRemoveEffect.h" />
+    <ClInclude Include="CmdRemoveInstance.h" />
+    <ClInclude Include="CmdRemoveSound.h" />
+    <ClInclude Include="CmdRenameScene.h" />
+    <ClInclude Include="CmdReplaceButtonObj.h" />
+    <ClInclude Include="CmdReplaceSound.h" />
+    <ClInclude Include="CmdSendToBack.h" />
+    <ClInclude Include="CmdTransformFillStyle.h" />
+    <ClInclude Include="CmdUpdateObj.h" />
+    <ClInclude Include="CodeTip.h" />
+    <ClInclude Include="CoException.h" />
+    <ClInclude Include="ColorPicker.h" />
+    <ClInclude Include="ColorPickerH.h" />
+    <ClInclude Include="ColorPickerSV.h" />
+    <ClInclude Include="ColorSwatch.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandDrawOnce.h" />
+    <ClInclude Include="ComUtils.h" />
+    <ClInclude Include="Crc32Static.h" />
+    <ClInclude Include="CurvedPath.h" />
+    <ClInclude Include="CustomDrawListCtrl.h" />
+    <ClInclude Include="CuteTabCtrl.h" />
+    <ClInclude Include="DeferWindowPos.h" />
+    <ClInclude Include="DesignWnd.h" />
+    <ClInclude Include="Dib.h" />
+    <ClInclude Include="DlgAbout.h" />
+    <ClInclude Include="DlgAboutLame.h" />
+    <ClInclude Include="DlgAddBrowser.h" />
+    <ClInclude Include="DlgApplyTemplate.h" />
+    <ClInclude Include="DlgChangeButtonText.h" />
+    <ClInclude Include="DlgColorAdvanced.h" />
+    <ClInclude Include="DlgColorSwatch.h" />
+    <ClInclude Include="DlgComment.h" />
+    <ClInclude Include="DlgDirectoryPicker.h" />
+    <ClInclude Include="DlgEffectPanel.h" />
+    <ClInclude Include="DlgExport.h" />
+    <ClInclude Include="DlgFontPreview.h" />
+    <ClInclude Include="DlgImportingSWF.h" />
+    <ClInclude Include="DlgInsertText.h" />
+    <ClInclude Include="DlgInstanceAction.h" />
+    <ClInclude Include="DlgNewFolder.h" />
+    <ClInclude Include="DlgPreview.h" />
+    <ClInclude Include="DlgProgress.h" />
+    <ClInclude Include="DlgSceneAction.h" />
+    <ClInclude Include="DlgSelectBackgrndPos.h" />
+    <ClInclude Include="DlgSelectEffect.h" />
+    <ClInclude Include="DlgSelectScene.h" />
+    <ClInclude Include="DlgSelectTarget.h" />
+    <ClInclude Include="DlgSelectTextChanging.h" />
+    <ClInclude Include="DlgTemplates.h" />
+    <ClInclude Include="DlgTextTool.h" />
+    <ClInclude Include="DlgToolOption.h" />
+    <ClInclude Include="DlgToolOptionPolygonTool.h" />
+    <ClInclude Include="DlgToolOptionRoundRectTool.h" />
+    <ClInclude Include="DlgToolOptionStarTool.h" />
+    <ClInclude Include="DlgToolOptionTextTool.h" />
+    <ClInclude Include="DlgUndoRedo.h" />
+    <ClInclude Include="DlgWebBrowser.h" />
+    <ClInclude Include="DockBarEx.h" />
+    <ClInclude Include="DockContextEx.h" />
+    <ClInclude Include="DrawHelper.h" />
+    <ClInclude Include="editcmd.h" />
+    <ClInclude Include="EditCxformPage.h" />
+    <ClInclude Include="EditEx.h" />
+    <ClInclude Include="EditGeneralPage.h" />
+    <ClInclude Include="EditMatrixPage.h" />
+    <ClInclude Include="EditMCEditTextDialog.h" />
+    <ClInclude Include="EditMCReplaceDialog.h" />
+    <ClInclude Include="EditMCShapePage.h" />
+    <ClInclude Include="EditMCShapeSheet.h" />
+    <ClInclude Include="EditMCSheet.h" />
+    <ClInclude Include="EditMCSoundPage.h" />
+    <ClInclude Include="EditMCTextPage.h" />
+    <ClInclude Include="editreg.h" />
+    <ClInclude Include="EditShapeFillPage.h" />
+    <ClInclude Include="EditShapeLinePage.h" />
+    <ClInclude Include="EditShapeSheet.h" />
+    <ClInclude Include="EditTextSheet.h" />
+    <ClInclude Include="EffectBar.h" />
+    <ClInclude Include="EffectCategory.h" />
+    <ClInclude Include="EffectCommonParameters.h" />
+    <ClInclude Include="EffectCommonUtils.h" />
+    <ClInclude Include="EffectInplaceEditor.h" />
+    <ClInclude Include="EffectWnd.h" />
+    <ClInclude Include="EventsListBox.h" />
+    <ClInclude Include="FileDialogEx.h" />
+    <ClInclude Include="FileName.h" />
+    <ClInclude Include="filepath.h" />
+    <ClInclude Include="FlashPlayer.h" />
+    <ClInclude Include="FlatBitmapButton.h" />
+    <ClInclude Include="FlatButton.h" />
+    <ClInclude Include="FlatColorButton.h" />
+    <ClInclude Include="FlatShapeButton.h" />
+    <ClInclude Include="FlexListCtrl.h" />
+    <ClInclude Include="FolderDialog.h" />
+    <ClInclude Include="FontComboBox.h" />
+    <ClInclude Include="FontPreviewCombo.h" />
+    <ClInclude Include="Glanda.h" />
+    <ClInclude Include="GlandaClipboard.h" />
+    <ClInclude Include="GlandaCommand.h" />
+    <ClInclude Include="GlandaDoc.h" />
+    <ClInclude Include="GlandaSizingControlBar.h" />
+    <ClInclude Include="GlandaVersion.h" />
+    <ClInclude Include="GlandaView.h" />
+    <ClInclude Include="GLD_Application.h" />
+    <ClInclude Include="GLD_PropertyPage.h" />
+    <ClInclude Include="GLD_PropertySheet.h" />
+    <ClInclude Include="gldEffect.h" />
+    <ClInclude Include="gldEffectManager.h" />
+    <ClInclude Include="gldInstance.h" />
+    <ClInclude Include="gldMainMovie2.h" />
+    <ClInclude Include="gldMovieSound.h" />
+    <ClInclude Include="gldScene2.h" />
+    <ClInclude Include="gldSceneSound.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="GPAIR.h" />
+    <ClInclude Include="Graphics.h" />
+    <ClInclude Include="GroupUpdate.h" />
+    <ClInclude Include="Help.h" />
+    <ClInclude Include="HexColorEdit.h" />
+    <ClInclude Include="HierarchyDropdown.h" />
+    <ClInclude Include="HierarchyPopup.h" />
+    <ClInclude Include="HistoryComboBox.h" />
+    <ClInclude Include="HSplitter.h" />
+    <ClInclude Include="I2C.h" />
+    <ClInclude Include="ImageListCtrl.h" />
+    <ClInclude Include="ImportImageDialog.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="InputBox.h" />
+    <ClInclude Include="InstanceActionPage.h" />
+    <ClInclude Include="InstanceActionSheet.h" />
+    <ClInclude Include="ITextTool.h" />
+    <ClInclude Include="JSFL.h" />
+    <ClInclude Include="LineWidthEdit.h" />
+    <ClInclude Include="ListTemplate.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MainToolBar.h" />
+    <ClInclude Include="MemberListBox.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="MiniDockFrameWndEx.h" />
+    <ClInclude Include="MoviePreview.h" />
+    <ClInclude Include="MoviePropertiesPage.h" />
+    <ClInclude Include="MoviePropertiesSheet.h" />
+    <ClInclude Include="MovieSoundPage.h" />
+    <ClInclude Include="MruMgr.h" />
+    <ClInclude Include="MulSelTreeCtrl.h" />
+    <ClInclude Include="my_app.h" />
+    <ClInclude Include="NewMenu.h" />
+    <ClInclude Include="NumberEdit.h" />
+    <ClInclude Include="ObjectMap.h" />
+    <ClInclude Include="ObjInstance.h" />
+    <ClInclude Include="Options.h" />
+    <ClInclude Include="OptionsPageAS.h" />
+    <ClInclude Include="OptionsPageDesign.h" />
+    <ClInclude Include="OptionsPageGeneral.h" />
+    <ClInclude Include="OptionsPagePreview.h" />
+    <ClInclude Include="OptionsPageTimeLine.h" />
+    <ClInclude Include="OptionsSheet.h" />
+    <ClInclude Include="OutputBar.h" />
+    <ClInclude Include="OutputDoc.h" />
+    <ClInclude Include="OutputView.h" />
+    <ClInclude Include="OwnerDrawComboBox.h" />
+    <ClInclude Include="OwnerDrawListBox.h" />
+    <ClInclude Include="PageCommon.h" />
+    <ClInclude Include="PageEffectPreviewOptions.h" />
+    <ClInclude Include="PagePublishExport.h" />
+    <ClInclude Include="PagePublishFinished.h" />
+    <ClInclude Include="PagePublishHTMLOptions.h" />
+    <ClInclude Include="PagePublishInsertCode.h" />
+    <ClInclude Include="PagePublishSelect.h" />
+    <ClInclude Include="PagePublishSelectHTML.h" />
+    <ClInclude Include="PagePublishViewCode.h" />
+    <ClInclude Include="PaneBar.h" />
+    <ClInclude Include="PlaySoundDialog.h" />
+    <ClInclude Include="PopupSliderCtrl.h" />
+    <ClInclude Include="ProfileManager.h" />
+    <ClInclude Include="ProgressStatusBar.h" />
+    <ClInclude Include="PropertyPageFixed.h" />
+    <ClInclude Include="PropGrid.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="ResizableDialog.h" />
+    <ClInclude Include="ResizableGrip.h" />
+    <ClInclude Include="ResizableLayout.h" />
+    <ClInclude Include="ResizableMinMax.h" />
+    <ClInclude Include="ResizableMsgSupport.h" />
+    <ClInclude Include="ResizablePage.h" />
+    <ClInclude Include="ResizableSheet.h" />
+    <ClInclude Include="ResizableState.h" />
+    <ClInclude Include="ResizableToolTipDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ResourceDirTreeCtrl.h" />
+    <ClInclude Include="ResourceExplorerTree.h" />
+    <ClInclude Include="ResourceExplorerWnd.h" />
+    <ClInclude Include="ResourceThumbFilePropertiesDialog.h" />
+    <ClInclude Include="ResourceThumbItem.h" />
+    <ClInclude Include="ResourceThumbListCtrl.h" />
+    <ClInclude Include="ResourceThumbObjPropertiesDialog.h" />
+    <ClInclude Include="ResourceThumbRenameDialog.h" />
+    <ClInclude Include="RichEditCtrlEx.h" />
+    <ClInclude Include="RuleWnd.h" />
+    <ClInclude Include="SceneActionPage.h" />
+    <ClInclude Include="SceneListBar.h" />
+    <ClInclude Include="SceneListCtrl.h" />
+    <ClInclude Include="SceneNameEdit.h" />
+    <ClInclude Include="ScenePropertiesPage.h" />
+    <ClInclude Include="ScenePropertiesSheet.h" />
+    <ClInclude Include="ScrollButton.h" />
+    <ClInclude Include="Selection.h" />
+    <ClInclude Include="ShapeDraw.h" />
+    <ClInclude Include="SheetPublish.h" />
+    <ClInclude Include="ShellPidl.h" />
+    <ClInclude Include="ShellTree.h" />
+    <ClInclude Include="shockwaveflash.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="sizecbar.h" />
+    <ClInclude Include="SizingControlBarEx.h" />
+    <ClInclude Include="SlidingPanel.h" />
+    <ClInclude Include="SlidingPanelGroup.h" />
+    <ClInclude Include="SmartComboBox.h" />
+    <ClInclude Include="SmartEdit.h" />
+    <ClInclude Include="SoundPlayerWrapper.h" />
+    <ClInclude Include="Splash.h" />
+    <ClInclude Include="Splitter.h" />
+    <ClInclude Include="StaticBitmap.h" />
+    <ClInclude Include="StaticColor.h" />
+    <ClInclude Include="StaticColorAlpha.h" />
+    <ClInclude Include="StaticFillStyle.h" />
+    <ClInclude Include="StaticLinearGradientFill.h" />
+    <ClInclude Include="StaticLink.h" />
+    <ClInclude Include="StaticPasvButton.h" />
+    <ClInclude Include="StaticShapePreview.h" />
+    <ClInclude Include="StaticSpinButton.h" />
+    <ClInclude Include="StaticSplitter.h" />
+    <ClInclude Include="StaticText.h" />
+    <ClInclude Include="StaticTip.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SWFImportCache.h" />
+    <ClInclude Include="SWFProxy.h" />
+    <ClInclude Include="SWFStream.h" />
+    <ClInclude Include="Symbols.h" />
+    <ClInclude Include="SysParas.h" />
+    <ClInclude Include="TargetTree.h" />
+    <ClInclude Include="TemplateCategory.h" />
+    <ClInclude Include="TemplateListCtrl.h" />
+    <ClInclude Include="TestImportDlg.h" />
+    <ClInclude Include="TextEffect.h" />
+    <ClInclude Include="TextStyleListCtrl.h" />
+    <ClInclude Include="TextStyleManager.h" />
+    <ClInclude Include="TextToolEx.h" />
+    <ClInclude Include="Tips.h" />
+    <ClInclude Include="TipWnd.h" />
+    <ClInclude Include="ToolBarButton.h" />
+    <ClInclude Include="ToolbarEx.h" />
+    <ClInclude Include="ToolButton.h" />
+    <ClInclude Include="ToolButtonPopup.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="toolsdef.h" />
+    <ClInclude Include="TransAdaptor.h" />
+    <ClInclude Include="TrayWnd.h" />
+    <ClInclude Include="TShapeParser.h" />
+    <ClInclude Include="Typeset.h" />
+    <ClInclude Include="UndoListBox.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VersionInfo.h" />
+    <ClInclude Include="VisualStylesXP.h" />
+    <ClInclude Include="VSplitter.h" />
+    <ClInclude Include="ZoomComboBox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResizableMsgSupport.inl" />
+    <None Include="res\add1.bmp" />
+    <None Include="res\add_acti.bmp" />
+    <None Include="res\add_even.bmp" />
+    <None Include="res\align_ce.bmp" />
+    <None Include="res\align_le.bmp" />
+    <None Include="res\align_mi.bmp" />
+    <None Include="res\align_ri.bmp" />
+    <None Include="res\alignbottom.bmp" />
+    <None Include="res\alignleft.bmp" />
+    <None Include="res\alignright.bmp" />
+    <None Include="res\aligntop.bmp" />
+    <None Include="res\anchorpoint.bmp" />
+    <None Include="res\applytemplate.bmp" />
+    <None Include="res\back.bmp" />
+    <None Include="res\bg_tiles.bmp" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\bitmap4.bmp" />
+    <None Include="res\blankdoc.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\bmp00002.bmp" />
+    <None Include="res\bmp00003.bmp" />
+    <None Include="res\bmp00004.bmp" />
+    <None Include="res\bmp00005.bmp" />
+    <None Include="res\bmp00006.bmp" />
+    <None Include="res\bmp00007.bmp" />
+    <None Include="res\bmp00008.bmp" />
+    <None Include="res\bmp00009.bmp" />
+    <None Include="res\bmp00010.bmp" />
+    <None Include="res\bmp00011.bmp" />
+    <None Include="res\bmp00012.bmp" />
+    <None Include="res\bmp00013.bmp" />
+    <None Include="res\bmp00014.bmp" />
+    <None Include="res\bmp00015.bmp" />
+    <None Include="res\bmp00016.bmp" />
+    <None Include="res\bmp00017.bmp" />
+    <None Include="res\bmp00018.bmp" />
+    <None Include="res\bmp00019.bmp" />
+    <None Include="res\bmp00020.bmp" />
+    <None Include="res\bmp00021.bmp" />
+    <None Include="res\bmp00022.bmp" />
+    <None Include="res\bmp00023.bmp" />
+    <None Include="res\bmp00024.bmp" />
+    <None Include="res\bmp00025.bmp" />
+    <None Include="res\bmp00026.bmp" />
+    <None Include="res\bmp00027.bmp" />
+    <None Include="res\bmp00028.bmp" />
+    <None Include="res\bmp00029.bmp" />
+    <None Include="res\bmp00032.bmp" />
+    <None Include="res\bmp00033.bmp" />
+    <None Include="res\bmp00034.bmp" />
+    <None Include="res\bmp00035.bmp" />
+    <None Include="res\bmp00036.bmp" />
+    <None Include="res\bmp00037.bmp" />
+    <None Include="res\bmp00038.bmp" />
+    <None Include="res\bmp00039.bmp" />
+    <None Include="res\bmp00040.bmp" />
+    <None Include="res\bmp00041.bmp" />
+    <None Include="res\bmp00042.bmp" />
+    <None Include="res\bmp16x17.bmp" />
+    <None Include="res\bmp32x17.bmp" />
+    <None Include="res\bmp3d_bo.bmp" />
+    <None Include="res\bold.bmp" />
+    <None Include="res\bold1.bmp" />
+    <None Include="res\bold2.bmp" />
+    <None Include="res\brokened.bmp" />
+    <None Include="res\BrokenEdge.bmp" />
+    <None Include="res\Browser.ico" />
+    <None Include="res\browser1.ico" />
+    <None Include="brush_st.bmp" />
+    <None Include="res\buton_co.bmp" />
+    <None Include="res\button.ico" />
+    <None Include="res\button_a.bmp" />
+    <None Include="res\button_b.bmp" />
+    <None Include="res\button_c.bmp" />
+    <None Include="res\button_h.bmp" />
+    <None Include="res\button_l.bmp" />
+    <None Include="res\button_m.bmp" />
+    <None Include="res\button_p.bmp" />
+    <None Include="res\button_u.bmp" />
+    <None Include="CBTreeState.bmp" />
+    <None Include="res\char_spa.bmp" />
+    <None Include="res\close.bmp" />
+    <None Include="res\CloseHighLight.bmp" />
+    <None Include="res\color_pa.bmp" />
+    <None Include="res\constrai.bmp" />
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="cursor1.cur" />
+    <None Include="res\down1.bmp" />
+    <None Include="res\drag_mul.cur" />
+    <None Include="res\drag_sin.cur" />
+    <None Include="res\Dragmove.cur" />
+    <None Include="res\EditGuidLine.bmp" />
+    <None Include="res\effect_c.bmp" />
+    <None Include="res\effect_cats.bmp" />
+    <None Include="res\effect_d.bmp" />
+    <None Include="res\effect_e.bmp" />
+    <None Include="res\effect_l.bmp" />
+    <None Include="res\effwnd_s.bmp" />
+    <None Include="res\eye1.bmp" />
+    <None Include="res\fill1.bmp" />
+    <None Include="res\forward.bmp" />
+    <None Include="res\glanda.ico" />
+    <None Include="res\Glanda.rc2" />
+    <None Include="Glanda.rgs" />
+    <None Include="res\GlandaDoc.ico" />
+    <None Include="GLD_Application.rgs" />
+    <None Include="res\global1.ico" />
+    <None Include="res\gotofolder.bmp" />
+    <None Include="res\group.ico" />
+    <None Include="hand_dra.cur" />
+    <None Include="hand_hol.cur" />
+    <None Include="res\Hande.bmp" />
+    <None Include="res\hourglass.ani" />
+    <None Include="res\hourglass.bmp" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon_inf.bmp" />
+    <None Include="res\idr_main.ico" />
+    <None Include="res\indent1.bmp" />
+    <None Include="res\indent2.bmp" />
+    <None Include="res\informat.bmp" />
+    <None Include="res\italic.bmp" />
+    <None Include="res\italic1.bmp" />
+    <None Include="res\lame.bmp" />
+    <None Include="res\layout_b.bmp" />
+    <None Include="res\left.bmp" />
+    <None Include="res\library_.bmp" />
+    <None Include="res\line1.bmp" />
+    <None Include="res\line_spa.bmp" />
+    <None Include="res\lock.bmp" />
+    <None Include="res\member_l.bmp" />
+    <None Include="mg_cur.cur" />
+    <None Include="mg_icons.bmp" />
+    <None Include="res\movieclip.ico" />
+    <None Include="res\my_hand.cur" />
+    <None Include="res\nav_bar1.bmp" />
+    <None Include="res\Nodrop01.cur" />
+    <None Include="res\paths_tool_line.bmp" />
+    <None Include="res\paths_tool_oval.bmp" />
+    <None Include="res\paths_tool_pen.bmp" />
+    <None Include="res\paths_tool_pencil.bmp" />
+    <None Include="res\paths_tool_rou.bmp" />
+    <None Include="res\picker.cur" />
+    <None Include="res\right.bmp" />
+    <None Include="res\right_ma.bmp" />
+    <None Include="res\shape.ico" />
+    <None Include="res\size_bot.bmp" />
+    <None Include="res\size_hei.bmp" />
+    <None Include="res\size_wid.bmp" />
+    <None Include="res\sliding_.bmp" />
+    <None Include="res\Sothink SWF Quicker.ico" />
+    <None Include="res\sound_l.bmp" />
+    <None Include="res\sound_t.bmp" />
+    <None Include="res\space_do.bmp" />
+    <None Include="res\spacedown.bmp" />
+    <None Include="res\Splash.bmp" />
+    <None Include="res\stockresourceicon.bmp" />
+    <None Include="res\sub.bmp" />
+    <None Include="res\text.ico" />
+    <None Include="res\tool_ink_bottle.bmp" />
+    <None Include="res\tool_line.bmp" />
+    <None Include="res\tool_oval.bmp" />
+    <None Include="res\tool_pai.bmp" />
+    <None Include="res\tool_paint_bucket.bmp" />
+    <None Include="res\tool_pen.bmp" />
+    <None Include="res\tool_pencil.bmp" />
+    <None Include="res\tool_pol.bmp" />
+    <None Include="res\tool_rec.bmp" />
+    <None Include="res\tool_rect.bmp" />
+    <None Include="res\tool_reshape.bmp" />
+    <None Include="res\tool_rou.bmp" />
+    <None Include="res\tool_select.bmp" />
+    <None Include="res\tool_text.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar_.bmp" />
+    <None Include="res\toolbar_16X16.bmp" />
+    <None Include="res\trial.glm" />
+    <None Include="res\ttf_glyph.bmp" />
+    <None Include="res\up1.bmp" />
+    <None Include="res\Zoom.bmp" />
+    <None Include="res\zoomin.bmp" />
+    <None Include="res\zoomout.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\Glanda.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Glanda.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CBTreeRc.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

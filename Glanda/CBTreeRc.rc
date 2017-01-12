@@ -1,0 +1,3 @@
+#include "CBTreeRc.h"
+
+IDB_CBTREE_STATE              BITMAP  DISCARDABLE     "CBTreeState.bmp"

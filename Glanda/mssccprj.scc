@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[Glanda.sln]
+SCC_Aux_Path = "\\Devserver\devprojects\Glanda\VSS"
+SCC_Project_Name = "$/New Glanda/src/Glanda", AFPDAAAA
+
+[Glanda.vcproj]
+SCC_Aux_Path = "\\Devserver\devprojects\Glanda\VSS"
+SCC_Project_Name = "$/New Glanda/src/Glanda", AFPDAAAA

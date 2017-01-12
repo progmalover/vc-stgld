@@ -1,0 +1,99 @@
+// Glanda.idl : IDL source for Glanda
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Glanda.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+cpp_quote("#include \"..\GlandaCOM\GlandaCOM.h\" ")
+
+[
+	uuid(1F864945-2901-4006-9251-861A2BBABBB6),
+	version(1.0),
+	helpstring("Glanda 1.0 Type Library")
+]
+library GlandaLib
+{
+	importlib("stdole2.tlb");
+
+#ifdef _DEBUG
+	importlib("../GlandaCom/Debug/GlandaCom.tlb");
+#else
+	importlib("../GlandaCom/Release/GlandaCom.tlb");
+#endif
+
+	// interfaces
+
+	[
+		object,
+		uuid(87F96757-781C-4A12-A93F-09651218B592),
+		dual,
+		nonextensible,
+		helpstring("IGLD_Application Interface"),
+		pointer_default(unique)
+	]
+	interface IGLD_Application : IDispatch{
+		[helpstring("method AddScene")] HRESULT AddScene([in] long nPos, [in] BSTR bstrName);
+		[helpstring("method DeleteScene")] HRESULT DeleteScene();
+		[helpstring("method SetCurScene")] HRESULT SetCurScene([in] long nPos);
+		[helpstring("method CreateInstance")] HRESULT CreateInstance([in] IGLD_Object * pObj, [in] IGLD_Matrix * pMatrix, [in] IGLD_Cxform * pCxform, [out, retval] long *pPos);
+		[helpstring("method Select")] HRESULT Select([in] long nPos, [in] VARIANT_BOOL bAppend);
+		[helpstring("method GetMovieSize")] HRESULT GetMovieSize([out] long *nWidth, [out] long *nHeight);
+		[helpstring("method SetMovieSize")] HRESULT SetMovieSize([in] long nWidth, [in] long nHeight);
+		[helpstring("method GetViewSize")] HRESULT GetViewSize([out] long *nWidth, [out] long *nHeight);
+		[helpstring("method ViewToCanvas")] HRESULT ViewToCanvas([out] long *x, [out] long *y);
+		[helpstring("method CenterMovie")] HRESULT CenterMovie();
+		[helpstring("method AddEffect")] HRESULT AddEffect([in] long nPos, [in] BSTR bstrProgID, [in] long nStartTime, [in] long nLength, [in] IGLD_Parameters *pParameters);
+		[helpstring("method LoadObjectFromFile")] HRESULT LoadObjectFromFile([in] BSTR bstrFileName, [out, retval] IGLD_Object **ppObject);
+		[helpstring("method Draw")] HRESULT Draw([in] IGLD_Object *pIObject, [in] HDC hDC, [in] long x, [in] long y, [in] long cx, [in] long cy, [in] long nTime);
+		[helpstring("method ExportMovie")] HRESULT ExportMovie([in] BSTR PathName, [in] VARIANT_BOOL bCompressed);
+
+		// Group/breakApart
+		[helpstring("method Group")] HRESULT Group();
+		[helpstring("method Ungroup")] HRESULT Ungroup();
+
+		// Z-Order
+		[helpstring("method BringForward")] HRESULT BringForward();
+		[helpstring("method BringToFront")] HRESULT BringToFront();
+		[helpstring("method SendBackward")] HRESULT SendBackward();
+		[helpstring("method SendToBack")] HRESULT SendToBack();
+
+		// Sound
+		[helpstring("method AddSceneSound")] HRESULT AddSceneSound([in] IGLD_Sound *pSound, [in] long nStartTime, [out, retval]long *pPos);
+		[helpstring("method DeleteSceneSound")] HRESULT DeleteSceneSound([in] long nPos);
+		[helpstring("method SetMovieSound")] HRESULT SetMovieSound([in] IGLD_Sound *pSound, [in] BSTR bstrStartScene, [in] VARIANT_BOOL bLoopFlag, [in]long nLoopTimes);
+
+		[propget, helpstring("property hWnd")] HRESULT hWnd([out, retval] long* pWnd);
+		[propget, helpstring("property BgColor")] HRESULT BgColor([out, retval] long *Color);
+		[propput, helpstring("property BgColor")] HRESULT BgColor([in] long Color);
+		[propget, helpstring("property FrameRate")] HRESULT FrameRate([out, retval] double *fFrameRate);
+		[propput, helpstring("property FrameRate")] HRESULT FrameRate([in] double fFrameRate);
+		[propget, helpstring("property TotalScenes")] HRESULT TotalScenes([out, retval] long *nCount);
+		[propget, helpstring("property EnterSceneActionScript")] HRESULT EnterSceneActionScript([out, retval] BSTR *bstrAction);
+		[propput, helpstring("property EnterSceneActionScript")] HRESULT EnterSceneActionScript([in] BSTR bstrAction);
+		[propget, helpstring("property ExitSceneActionScript")] HRESULT ExitSceneActionScript([out, retval] BSTR *bstrAction);
+		[propput, helpstring("property ExitSceneActionScript")] HRESULT ExitSceneActionScript([in] BSTR bstrAction);
+		[propget, helpstring("property InstanceActionScript")] HRESULT InstanceActionScript([out, retval] BSTR *bstrAction);
+		[propput, helpstring("property InstanceActionScript")] HRESULT InstanceActionScript([in] BSTR bstrAction);
+		[propget, helpstring("property InstanceName")] HRESULT InstanceName([out, retval] BSTR *bstrName);
+		[propput, helpstring("property InstanceName")] HRESULT InstanceName([in] BSTR bstrName);
+		[propget, helpstring("property SceneName")] HRESULT SceneName([out, retval] BSTR *bstrName);
+		[propput, helpstring("property SceneName")] HRESULT SceneName([in] BSTR bstrName);
+		[propget, helpstring("property EffectCommonParameters")] HRESULT EffectCommonParameters([out, retval] IGLD_Parameters **ppParameters);
+		[propput, helpstring("property EffectCommonParameters")] HRESULT EffectCommonParameters([in] IGLD_Parameters *pParameters);
+		[propget, helpstring("property InstanceMask")] HRESULT InstanceMask([out, retval] VARIANT_BOOL *bMask);
+		[propput, helpstring("property InstanceMask")] HRESULT InstanceMask([in] VARIANT_BOOL bMask);
+	};
+
+	// coclasses
+	[
+		uuid(77A5CE55-910C-400D-B632-5F2BC6FC1F1D),
+		helpstring("GLD_Application Class")
+	]
+	coclass GLD_Application
+	{
+		[default] interface IGLD_Application;
+	};
+};
